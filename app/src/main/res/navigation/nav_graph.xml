@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.kalkulatorluass.MainFragment"
+        android:label="ShapeCalc">
+        <action
+            android:id="@+id/action_mainFragment_to_triangleFragment"
+            app:destination="@id/triangleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_circleFragment"
+            app:destination="@id/circleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_squareFragment"
+            app:destination="@id/squareFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_rectangleFragment"
+            app:destination="@id/rectangleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/triangleFragment"
+        android:name="com.example.kalkulatorluass.TriangleFragment"
+        android:label="Segitiga">
+        <action
+            android:id="@+id/action_triangleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/circleFragment"
+        android:name="com.example.kalkulatorluass.CircleFragment"
+        android:label="Lingkaran">
+        <action
+            android:id="@+id/action_circleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/squareFragment"
+        android:name="com.example.kalkulatorluass.SquareFragment"
+        android:label="Persegi">
+        <action
+            android:id="@+id/action_squareFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rectangleFragment"
+        android:name="com.example.kalkulatorluass.RectangleFragment"
+        android:label="Persegi Panjang">
+        <action
+            android:id="@+id/action_rectangleFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

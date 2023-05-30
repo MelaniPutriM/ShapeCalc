@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainFragment">
+    <data>
+        <variable
+            name="mainActivity"
+            type="com.example.kalkulatorluass.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/abfdf675f17c6ca164098e074bb79e65"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnTriangle"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="20dp"
+            android:text="Triangle" />
+
+        <Button
+            android:id="@+id/btnCircle"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnTriangle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="Circle" />
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCircle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="Square" />
+
+        <Button
+            android:id="@+id/btnRectangle"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSquare"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="Rectangle" />
+    </LinearLayout>
+
+</layout>
